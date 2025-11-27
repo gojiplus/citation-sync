@@ -42,7 +42,7 @@ jobs:
           echo "fields=$CUSTOM_FIELDS" >> $GITHUB_OUTPUT
       
       - name: Sync CITATION.cff
-        uses: your-username/citation-sync@v1
+        uses: gojiplus/citation-sync@v1
         with:
           commit: ${{ github.event.inputs.commit_changes }}
           force-update: ${{ github.event.inputs.force_update }}

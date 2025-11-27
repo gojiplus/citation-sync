@@ -9,10 +9,10 @@ description = "GitHub Action for synchronizing CITATION.cff with pyproject.toml 
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Citation Sync Contributors", email = "contributors@citation-sync.dev"}
+    {name = "Gaurav Sood", email = "contact@gsood.com"}
 ]
 maintainers = [
-    {name = "Citation Sync Maintainers", email = "maintainers@citation-sync.dev"}
+    {name = "Gaurav Sood", email = "contact@gsood.com"}
 ]
 keywords = [
     "github-actions",
@@ -57,10 +57,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/soodoku/citation-sync"
-Repository = "https://github.com/soodoku/citation-sync"
-Issues = "https://github.com/soodoku/citation-sync/issues"
-Documentation = "https://github.com/soodoku/citation-sync#readme"
+Homepage = "https://github.com/gojiplus/citation-sync"
+Repository = "https://github.com/gojiplus/citation-sync"
+Issues = "https://github.com/gojiplus/citation-sync/issues"
+Documentation = "https://github.com/gojiplus/citation-sync#readme"
 
 [project.scripts]
 citation-sync = "src.sync_citation:main"

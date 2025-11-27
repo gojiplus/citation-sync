@@ -14,7 +14,7 @@ jobs:
       
       - name: Check CITATION.cff consistency
         id: citation-check
-        uses: your-username/citation-sync@v1
+        uses: gojiplus/citation-sync@v1
         with:
           validate-only: true
       
@@ -35,7 +35,7 @@ jobs:
               Consider running the citation-sync action to update your citation file:
               \`\`\`yaml
               - name: Sync CITATION.cff
-                uses: your-username/citation-sync@v1
+                uses: gojiplus/citation-sync@v1
                 with:
                   commit: true
               \`\`\`

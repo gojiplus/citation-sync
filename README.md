@@ -17,7 +17,7 @@ Add this step to your GitHub workflow:
 
 ```yaml
 - name: Sync CITATION.cff
-  uses: your-username/citation-sync@v1
+  uses: gojiplus/citation-sync@v1
   with:
     commit: true
 ```
@@ -77,7 +77,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Sync CITATION.cff
-        uses: your-username/citation-sync@v1
+        uses: gojiplus/citation-sync@v1
         with:
           commit: true
 ```
@@ -86,7 +86,7 @@ jobs:
 
 ```yaml
 - name: Sync CITATION.cff with DOI
-  uses: your-username/citation-sync@v1
+  uses: gojiplus/citation-sync@v1
   with:
     commit: true
     custom-fields: |
@@ -101,7 +101,7 @@ jobs:
 
 ```yaml
 - name: Validate CITATION.cff
-  uses: your-username/citation-sync@v1
+  uses: gojiplus/citation-sync@v1
   with:
     validate-only: true
 ```
@@ -128,7 +128,7 @@ jobs:
           python-version: '3.9'
       
       - name: Update CITATION.cff
-        uses: your-username/citation-sync@v1
+        uses: gojiplus/citation-sync@v1
         with:
           commit: true
           commit-message: "docs: update CITATION.cff for release ${{ github.ref_name }}"
@@ -159,7 +159,7 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Check CITATION.cff consistency
-        uses: your-username/citation-sync@v1
+        uses: gojiplus/citation-sync@v1
         with:
           validate-only: true
       
