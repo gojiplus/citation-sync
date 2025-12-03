@@ -16,7 +16,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Sync CITATION.cff with pyproject.toml
-        uses: gojiplus/citation-sync@v1
+        uses: recite/citation-sync@v1
         with:
           commit: true
           commit-message: "docs: update CITATION.cff for release ${{ github.ref_name }}"

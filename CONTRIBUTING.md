@@ -6,7 +6,7 @@ Thank you for considering contributing to Citation Sync! We welcome contribution
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/gojiplus/citation-sync.git
+git clone https://github.com/recite/citation-sync.git
 cd citation-sync
 ```
 

@@ -57,10 +57,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/gojiplus/citation-sync"
-Repository = "https://github.com/gojiplus/citation-sync"
-Issues = "https://github.com/gojiplus/citation-sync/issues"
-Documentation = "https://github.com/gojiplus/citation-sync#readme"
+Homepage = "https://github.com/recite/citation-sync"
+Repository = "https://github.com/recite/citation-sync"
+Issues = "https://github.com/recite/citation-sync/issues"
+Documentation = "https://github.com/recite/citation-sync#readme"
 
 [project.scripts]
 citation-sync = "src.sync_citation:main"

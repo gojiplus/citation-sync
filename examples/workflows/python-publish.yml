@@ -19,10 +19,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.11'
       
       - name: Update CITATION.cff
-        uses: gojiplus/citation-sync@v1
+        uses: recite/citation-sync@v1
         with:
           commit: true
           commit-message: "docs: update CITATION.cff for release ${{ github.ref_name }}"
