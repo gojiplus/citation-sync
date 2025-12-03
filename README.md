@@ -1,5 +1,11 @@
 # Citation Sync GitHub Action
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/recite/citation-sync)
+![GitHub Marketplace](https://img.shields.io/badge/GitHub%20Marketplace-citation-sync)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![Used By](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/gojiplus/adjacent/main/docs/citation-sync.json)](https://github.com/search?q=recite/citation-sync+path%3A.github%2Fworkflows+language%3AYAML&type=code)
+
+
 A GitHub Action that automatically synchronizes [Citation File Format (CFF)](https://citation-file-format.github.io/) files with [PEP 621](https://peps.python.org/pep-0621/) metadata from `pyproject.toml`.
 
 ## Features
