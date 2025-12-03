@@ -3,7 +3,7 @@
 
 [project]
 name = "citation-sync"
-version = "1.0.0"
+version = "0.3.0"
 requires-python = ">=3.9"
 dependencies = [
     "tomli>=2.0.0;python_version<'3.11'",

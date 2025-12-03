@@ -27,5 +27,6 @@ jobs:
           custom-fields: |
             {
               "repository-code": "${{ github.server_url }}/${{ github.repository }}",
-              "type": "software"
+              "type": "software",
+              "date-released": "${{ github.event.release.published_at || github.event.head_commit.timestamp }}"
             }
