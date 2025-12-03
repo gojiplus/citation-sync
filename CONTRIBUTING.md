@@ -10,16 +10,9 @@ git clone https://github.com/recite/citation-sync.git
 cd citation-sync
 ```
 
-2. Create a virtual environment:
+2. Install dependencies:
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r src/requirements.txt
-pip install -e ".[dev]"
+uv sync --all-extras
 ```
 
 ## Testing
@@ -28,7 +21,7 @@ pip install -e ".[dev]"
 
 Test the script directly:
 ```bash
-python src/sync_citation.py
+uv run python src/sync_citation.py
 ```
 
 ### Testing with Act
@@ -42,15 +35,12 @@ act -j test-action
 
 ## Code Quality
 
-We use several tools to maintain code quality:
+We use ruff to maintain code quality:
 
 ```bash
-# Format code
-black src/
-isort src/
-
-# Lint code
-flake8 src/
+# Format and lint code
+uv run ruff check src/
+uv run ruff format src/
 ```
 
 ## Submitting Changes

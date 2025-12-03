@@ -131,7 +131,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.11'
       
       - name: Update CITATION.cff
         uses: recite/citation-sync@v1
@@ -141,8 +141,8 @@ jobs:
       
       - name: Build package
         run: |
-          python -m pip install --upgrade pip build
-          python -m build
+          uv sync
+          uv build
       
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
